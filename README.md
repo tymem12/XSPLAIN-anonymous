@@ -1,14 +1,25 @@
 # <div align="center">XSPLAIN: XAI-enabling Splat-based Prototype Learning for Attribute-aware INterpretability</div>
 
 <p align="center">
-  <em>Demo (loops):</em><br>
+  <em>Microphone Explaining:</em><br>
   <img src="resources/microphone.gif" alt="XSPLAIN demo" width="920">
+</p>
+
+<p align="center">
+  <em>Airplane Explaining:</em><br>
+  <img src="resources/channels_comparison_airplane_002.gif" alt="XSPLAIN demo" width="920">
+</p>
+
+<p align="center">
+  <em>Sedan Explaining:</em><br>
+  <img src="resources/channels_comparison_sedan_008.gif" alt="XSPLAIN demo" width="920">
 </p>
 
 <p align="center">
   <em>Teaser:</em><br>
   <img src="resources/teaser.png" alt="Teaser" width="920">
 </p>
+
 
 ## ABSTRACT
 3D Gaussian Splatting (3DGS) has rapidly become a standard for high-fidelity 3D reconstruction, yet its adoption in multiple critical domains is hindered by the lack of interpretability of the generation models as well as classification of the Splats. While explainability methods exist for other 3D representations, like point clouds, they typically rely on ambiguous saliency maps that fail to capture the volumetric coherence of Gaussian primitives. We introduce XSPLAIN, the first ante-hoc, prototype-based interpretability framework designed specifically for 3DGS classification. Our approach leverages a voxel-aggregated PointNet backbone and a novel, invertible orthogonal transformation that disentangles feature channels for interpretability while strictly preserving the original decision boundaries. Explanations are grounded in representative training examples, enabling intuitive "this looks like that" reasoning without any degradation in classification performance. A rigorous user study (N=51) demonstrates a decisive preference for our approach: participants selected XSPLAIN, explanations 48.4% of the time as the best, significantly outperforming baselines $(p < 0.001)$, showing that XSPLAIN, provides transparency and user trust.
